@@ -1,0 +1,10 @@
+<input type="number" placeholder="số thứ nhất" [(ngModel)] = "number1">
+<select id="operator" [(ngModel)] = "operator">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+<input type="number" id="numb2" placeholder="số thứ hai" [(ngModel)] = "number2">
+<input type="button"  value="Thực thi" (click)="calculator()">
+<div id="result">{{result}}</div>
